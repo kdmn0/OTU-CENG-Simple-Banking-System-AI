@@ -22,7 +22,7 @@ Modular Python-based console banking system with ADT design for transaction mana
   - Coordinate multi-account operations
 
 ### Person 3: UI & Testing
-- **File**: `src/main.py`, `tests/test_banking.py`
+- **File**: `src/main.py`, `src/test_banking.py`
 - **Responsibilities**:
   - Console-based user interface
   - Write test cases (minimum 5)
@@ -39,9 +39,9 @@ BankingSystem/
 │   ├── transaction.py    # Transaction ADT & Stack data structure
 │   ├── account.py        # Account ADT
 │   ├── bank.py           # Bank ADT
-│   └── main.py           # Console UI
-└── tests/
-    └── test_banking.py   # Test suite (6+ test cases)
+│   ├── main.py           # Console UI
+│   └── test_banking.py   # Test suite (6+ test cases)
+└──
 ```
 
 ---
@@ -93,7 +93,7 @@ python src/main.py
 
 ### 2. Run Test Suite
 ```bash
-python tests/test_banking.py
+python src/test_banking.py
 ```
 
 ---
@@ -180,7 +180,7 @@ python tests/test_banking.py
 1. **Ensure Python 3.x is installed**
 2. **Navigate to project directory**
 3. **Run main program**: `python src/main.py`
-4. **Run tests**: `python tests/test_banking.py`
+4. **Run tests**: `python src/test_banking.py`
 
 ---
 
