@@ -1,6 +1,6 @@
 # Simple Banking System - CENG110 Project 6
 
-## Project Overview
+## Project Overview (Prepared by AI)
 Modular Python-based console banking system with ADT design for transaction management.
 
 ## Team Structure (3 People - Minimum Requirements)
