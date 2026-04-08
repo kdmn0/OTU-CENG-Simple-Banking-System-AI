@@ -143,25 +143,6 @@
 
 ---
 
-## Timeline (3 Weeks)
-
-### **Week 1**:
-- **Person 1**: Implement transaction.py and basic account.py
-- **Person 2**: Wait for Account module completion, then start bank.py design
-- **Person 3**: Design test cases structure, prepare UI mockups
-
-### **Week 2**:
-- **Person 1**: Complete account.py and unit tests → Review
-- **Person 2**: Implement bank.py, integration testing
-- **Person 3**: Implement main UI, write test cases
-
-### **Week 3**:
-- **Person 1**: Code review, optimization, documentation
-- **Person 2**: Testing & bug fixes, final validation
-- **Person 3**: Final testing, documentation, prepare report
-
----
-
 ## Code Structure Reference
 
 ```
