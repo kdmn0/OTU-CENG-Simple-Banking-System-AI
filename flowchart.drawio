@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="0wTzzXkhG0IFxHyi9H99">
+    <mxGraphModel dx="896" dy="433" grid="1" gridSize="10" GUID="m0" carry="" swfurl="" encrypt="false" zoom="0.6" theme="default"> 
+      <root>
+        <mxCell id="0" value="" style="" parent=""/> 
+        <mxCell id="1" value="" style="" parent="0"/> 
+        <mxCell id="2" value="Files" style="rounded=1;whiteSpace=wrap;html=1;background=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry width="120" height="50"/> 
+        </mxCell>
+        <mxCell id="3" value="main.py" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="20" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="4" value="bank.py" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="20" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="5" value="account.py" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="6" value="transaction.py" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="7" value="UIFlow" style="rounded=1;whiteSpace=wrap;html=1;background=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="100" width="120" height="50"/> 
+        </mxCell>
+        <mxCell id="8" value="Start" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="9" value="BankingUI.run()" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="160" width="120" height="30"/> 
+        </mxCell>
+        <mxCell id="10" value="state decision" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="220" width="120" height="30"/> 
+        </mxCell>
+        <mxCell id="11" value="menuMain" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="220" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="12" value="menuAcc" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="280" width="100" height="30"/> 
+        </mxCell>
+        <mxCell id="13" value="create/login/listacc/admin/exit" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="340" width="240" height="30"/> 
+        </mxCell>
+        <mxCell id="14" value="dep/wit/tr/hist/logout" style="rounded=1;whiteSpace=wrap;html=1;background=#e1e1e1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="400" width="240" height="30"/> 
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="3" target="2" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="21" edge="1" parent="1" source="4" target="2" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="22" edge="1" parent="1" source="5" target="2" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="23" edge="1" parent="1" source="6" target="2" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="24" edge="1" parent="1" source="8" target="7" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="25" edge="1" parent="1" source="9" target="8" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="26" edge="1" parent="1" source="10" target="9" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="27" edge="1" parent="1" source="11" target="10" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="28" edge="1" parent="1" source="12" target="11" style="endArrow=blockThin;strokeColor=#000000;"/>
+        <mxCell id="29" edge="1" parent="1" source="13" target="12" style="endArrow=blockThin;strokeColor=#000000;"/n        <mxCell id="30" edge="1" parent="1" source="16" target="15" style="endArrow=blockThin;strokeColor=#000000;"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
