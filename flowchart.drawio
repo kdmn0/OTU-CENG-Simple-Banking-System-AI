@@ -1,75 +1,177 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="F10l00ev4rD8U6DJs0M3">
-    <mxGraphModel>
+  <diagram name="Banking System Flowchart" id="banking-system-flowchart">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="0" parent="1"/>
-        <mxCell id="1" parent="-1"/>
-        <mxCell id="2" value="Vertex 2" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="20" width="80" height="30"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ═══ UI Layer Container ═══ -->
+        <mxCell id="ui" value="UI Layer (main.py / BankingUI)" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="200" height="500" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="Vertex 3" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="70" width="80" height="30"/>
+        <mxCell id="ui-run" value="run()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="40" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="4" value="Vertex 4" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="120" width="80" height="30"/>
+        <mxCell id="ui-create" value="create_account()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="90" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="Vertex 5" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="170" width="80" height="30"/>
+        <mxCell id="ui-login" value="login_account()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="140" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6" value="Vertex 6" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="220" width="80" height="30"/>
+        <mxCell id="ui-list" value="list_all_accounts()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="190" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7" value="Vertex 7" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="270" width="80" height="30"/>
+        <mxCell id="ui-admin" value="admin_view()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="240" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8" value="Vertex 8" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="320" width="80" height="30"/>
+        <mxCell id="ui-deposit" value="deposit_money()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="290" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9" value="Vertex 9" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="370" width="80" height="30"/>
+        <mxCell id="ui-withdraw" value="withdraw_money()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="340" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="10" value="Vertex 10" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="420" width="80" height="30"/>
+        <mxCell id="ui-transfer" value="transfer_money()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="390" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="11" value="Vertex 11" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="470" width="80" height="30"/>
+        <mxCell id="ui-history" value="view_transaction_history()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="ui">
+          <mxGeometry x="10" y="440" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="12" value="Vertex 12" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="520" width="80" height="30"/>
+
+        <!-- ═══ Bank Layer Container ═══ -->
+        <mxCell id="bank" value="Bank Layer (bank.py / Bank)" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="290" y="20" width="200" height="500" as="geometry" />
         </mxCell>
-        <mxCell id="13" value="Vertex 13" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="570" width="80" height="30"/>
+        <mxCell id="bank-create" value="create_account()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="40" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="14" value="Vertex 14" style="rounded=1; whiteSpace=wrap; html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="620" width="80" height="30"/>
+        <mxCell id="bank-exists" value="account_exists()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="90" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-get" value="get_account()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="140" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-list" value="list_all_accounts()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="190" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="5">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-str" value="__str__()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="240" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="6">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-deposit" value="deposit()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="290" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="7">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-withdraw" value="withdraw()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="340" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="7" target="8">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-transfer" value="transfer()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="390" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="8" target="9">
-          <mxGeometry relative="1"/>
+        <mxCell id="bank-history" value="get_transaction_history()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bank">
+          <mxGeometry x="10" y="440" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="9" target="10">
-          <mxGeometry relative="1"/>
+
+        <!-- ═══ Account Layer Container ═══ -->
+        <mxCell id="acc" value="Account Layer (account.py / Account)" style="swimlane;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="560" y="20" width="200" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="10" target="11">
-          <mxGeometry relative="1"/>
+        <mxCell id="acc-deposit" value="deposit()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="acc">
+          <mxGeometry x="10" y="40" width="180" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="acc-withdraw" value="withdraw()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="acc">
+          <mxGeometry x="10" y="90" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="acc-transfer-out" value="transfer_out()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="acc">
+          <mxGeometry x="10" y="140" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="acc-transfer-in" value="transfer_in()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="acc">
+          <mxGeometry x="10" y="190" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="acc-history" value="get_transaction_history()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="acc">
+          <mxGeometry x="10" y="240" width="180" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ═══ Transaction Layer Container ═══ -->
+        <mxCell id="tx" value="Transaction Layer (transaction.py)" style="swimlane;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="830" y="20" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tx-init" value="Transaction.__init__()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tx">
+          <mxGeometry x="10" y="40" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tx-push" value="TransactionStack.push()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tx">
+          <mxGeometry x="10" y="90" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tx-get-all" value="TransactionStack.get_all_transactions()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tx">
+          <mxGeometry x="10" y="140" width="180" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ═══ EDGES: UI → Bank ═══ -->
+        <mxCell id="e-ui-create-bank" value="Bank.create_account()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-create" target="bank-create" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-login-exists" value="account_exists()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-login" target="bank-exists" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-login-get" value="get_account()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-login" target="bank-get" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-list-bank" value="list_all_accounts()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-list" target="bank-list" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-admin-str" value="__str__()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-admin" target="bank-str" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-admin-list" value="list_all_accounts()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-admin" target="bank-list" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-deposit-bank" value="Bank.deposit()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-deposit" target="bank-deposit" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-withdraw-bank" value="Bank.withdraw()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-withdraw" target="bank-withdraw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-transfer-bank" value="Bank.transfer()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-transfer" target="bank-transfer" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-history-bank" value="get_transaction_history()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="ui-history" target="bank-history" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ═══ EDGES: Bank → Account ═══ -->
+        <mxCell id="e-bank-deposit-acc" value="Account.deposit()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="bank-deposit" target="acc-deposit" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-bank-withdraw-acc" value="Account.withdraw()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="bank-withdraw" target="acc-withdraw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-bank-transfer-out" value="transfer_out()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="bank-transfer" target="acc-transfer-out" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-bank-transfer-in" value="transfer_in()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="bank-transfer" target="acc-transfer-in" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-bank-history-acc" value="get_transaction_history()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="bank-history" target="acc-history" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ═══ EDGES: Account → Transaction/TransactionStack ═══ -->
+        <mxCell id="e-acc-deposit-tx" value="Transaction() + push()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="acc-deposit" target="tx-push" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-acc-withdraw-tx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="acc-withdraw" target="tx-push" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-acc-trf-out-tx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="acc-transfer-out" target="tx-push" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-acc-trf-in-tx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="acc-transfer-in" target="tx-push" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-acc-history-tx" value="get_all_transactions()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="acc-history" target="tx-get-all" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-tx-init-push" value="creates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;" edge="1" source="tx-init" target="tx-push" parent="tx">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
